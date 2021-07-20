@@ -10,23 +10,29 @@ body {
 .container {
     max-width: 100%;
     width: 600px;
+    max-height: 900px;
     background-color: rgb(238, 231, 222);
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .header_img {
-    margin-left: 50px;
+    position: absolute;
+    top: 20px;
+    margin-left: 25px;
 }
 
 .my_img {
-    width: 50%;
-    border-radius: 100px;
+    border: 5px solid;
+    width: 150px;
+    border-radius: 85px;
 }
 
 .my_name {
+    background-color: #59bd59;
     width: 100%;
-    margin-right: 50px;
+    margin: 18px 0;
+    padding: 0 30px;
+    text-align: right;
 }
 
 .name {
@@ -38,8 +44,25 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 35px 0;
+}
 
-    border-bottom: 5px solid #afafb3;
+.about_me_inner {
+    border-top: 5px solid #afafb3;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Satisfy', cursive;
+    width: 40%;
+    padding-left: 20px;
+}
+
+h2 {
+    margin: 5px 0;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    text-align: justify;
 }
 
 
