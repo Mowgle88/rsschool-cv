@@ -58,6 +58,7 @@ body {
 h2 {
     margin: 5px 0;
     text-align: center;
+    background-color: #59bd59;
 }
 
 p {
@@ -65,4 +66,10 @@ p {
     text-align: justify;
 }
 
-
+.education {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Satisfy', cursive;
+    width: 40%;
+    padding-left: 20px;
+}
