@@ -13,6 +13,7 @@ body {
     max-height: 900px;
     background-color: rgb(238, 231, 222);
     margin: 0 auto;
+    
 }
 
 .header_img {
@@ -46,13 +47,29 @@ body {
     padding: 35px 0;
 }
 
-.about_me_inner {
+.all_about_me {
     border-top: 5px solid #afafb3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about_me_inner {
+    
     display: flex;
     flex-direction: column;
     font-family: 'Satisfy', cursive;
     width: 40%;
+    height: 605px;
     padding-left: 20px;
+}
+
+.education_and_experienc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 20px;
+    font-family: 'Satisfy', cursive;
 }
 
 h2 {
@@ -69,7 +86,10 @@ p {
 .education {
     display: flex;
     flex-direction: column;
-    font-family: 'Satisfy', cursive;
-    width: 40%;
-    padding-left: 20px;
+   
+}
+
+.experienc_inner {
+    display: flex;
+    flex-direction: column;
 }
