@@ -10,7 +10,6 @@ body {
 .container {
     max-width: 100%;
     width: 600px;
-    max-height: 900px;
     background-color: rgb(238, 231, 222);
     margin: 0 auto;
     
@@ -24,14 +23,14 @@ body {
 
 .my_img {
     border: 5px solid;
-    width: 150px;
+    width: 125px;
     border-radius: 85px;
 }
 
 .my_name {
     background-color: #59bd59;
     width: 100%;
-    margin: 18px 0;
+    margin: 5px 0;
     padding: 0 30px;
     text-align: right;
 }
@@ -59,14 +58,7 @@ body {
     flex-direction: column;
     font-family: 'Satisfy', cursive;
     width: 40%;
-    height: 605px;
     padding-left: 20px;
-}
-
-.about_me_inner {
-    display: flex;
-    flex-direction: column;
-    
 }
 
 .education_and_experienc {
@@ -88,9 +80,37 @@ p {
     text-align: justify;
 }
 
-.education, .experienc_inner {
+.footer_inner {
+    height: 85px;
+    background-color: #59bd59;
     display: flex;
-    flex-direction: column;
-   
+    justify-content: space-between;
 }
 
+.logo {
+    width: 30%;
+}
+
+.year {
+    padding: 25px;
+    width: 30%;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+}
+
+.img_logo {
+    padding: 10px;
+    height: 60px;
+    
+}
+
+.contacts {
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+a {
+    margin: 5px;
+}
