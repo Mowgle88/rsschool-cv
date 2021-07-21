@@ -54,14 +54,19 @@ body {
     justify-content: space-between;
 }
 
-.about_me_inner {
-    
+.about_me_and_skills {
     display: flex;
     flex-direction: column;
     font-family: 'Satisfy', cursive;
     width: 40%;
     height: 605px;
     padding-left: 20px;
+}
+
+.about_me_inner {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .education_and_experienc {
@@ -83,13 +88,9 @@ p {
     text-align: justify;
 }
 
-.education {
+.education, .experienc_inner {
     display: flex;
     flex-direction: column;
    
 }
 
-.experienc_inner {
-    display: flex;
-    flex-direction: column;
-}
