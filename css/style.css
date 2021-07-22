@@ -8,11 +8,11 @@ body {
 }
 
 .container {
-    max-width: 100%;
-    width: 600px;
-    background-color: rgb(238, 231, 222);
     margin: 0 auto;
-    
+    max-width: 100%;
+    width: 550px;
+    background-color: rgb(238, 231, 222);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .header_img {
@@ -22,17 +22,17 @@ body {
 }
 
 .my_img {
-    border: 5px solid;
     width: 125px;
+    border: 5px solid;
     border-radius: 85px;
 }
 
 .my_name {
-    background-color: #59bd59;
     width: 100%;
     margin: 5px 0;
     padding: 0 30px;
     text-align: right;
+    background-color: #59bd59;
 }
 
 .name {
@@ -47,27 +47,29 @@ body {
 }
 
 .all_about_me {
-    border-top: 5px solid #afafb3;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-top: 5px solid #afafb3;
 }
 
-.about_me_and_skills {
+.about_me_and_skills, 
+.education_and_experienc {
     display: flex;
     flex-direction: column;
     font-family: 'Satisfy', cursive;
+}
+
+.about_me_and_skills {
     width: 40%;
     padding-left: 20px;
 }
 
 .education_and_experienc {
-    display: flex;
-    flex-direction: column;
     width: 50%;
     padding-right: 20px;
-    font-family: 'Satisfy', cursive;
 }
+
 
 h2 {
     margin: 5px 0;
@@ -81,10 +83,10 @@ p {
 }
 
 .footer_inner {
-    height: 85px;
-    background-color: #59bd59;
     display: flex;
     justify-content: space-between;
+    height: 85px;
+    background-color: #59bd59;
 }
 
 .logo {
@@ -95,14 +97,13 @@ p {
     padding: 25px;
     width: 30%;
     text-align: center;
-    font-family: 'Satisfy', cursive;
     font-size: 35px;
+    font-family: 'Satisfy', cursive;
 }
 
 .img_logo {
     padding: 10px;
     height: 60px;
-    
 }
 
 .contacts {
