@@ -1,2 +1,1 @@
-
-https://Mowgle88.github.io/rsschool-cv/
+https://mowgle88.github.io/rsschool-cv/cv
