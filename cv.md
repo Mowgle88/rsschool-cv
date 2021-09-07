@@ -16,4 +16,4 @@ Work experienc:
 
 * 2013-2015 "Cryogenmash", process engineer
 
-There were no programming skills! I started to study from scratch. I also started learning English recently!
+There were no programming skills! I started to study from scratch! I also started learning English recently!
