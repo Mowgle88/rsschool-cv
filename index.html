@@ -12,88 +12,145 @@
 </head>
 <body>
 
-    <header class = "header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header_img">
-                    <img class="my_img" src="./img/1l9TD209PNk.png" alt="It's my">
-                </div>
+    <!-- Sprite -->
+    <svg style="display: none;">
 
-                <div class="my_name">
-                    <h1 class="name">Ilyin Dmitry Igorevich</h1>
-                </div>
+        <symbol id="github" width="40" height="40" viewBox="0 0 40 40">
+            <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"/>
+        </symbol>
+
+        <symbol id="vk" width="40" height="40" viewBox="0 0 40 40">
+            <path d="M20.911 0h-9.823c-8.964 0-11.089 2.125-11.089 11.089v9.823c0 8.964 2.125 11.089 11.089 11.089h9.823c8.964 0 11.089-2.125 11.089-11.089v-9.823c0-8.964-2.146-11.089-11.089-11.089zM25.833 22.828h-2.323c-0.88 0-1.151-0.698-2.734-2.302-1.375-1.333-1.984-1.51-2.323-1.51-0.479 0-0.615 0.135-0.615 0.792v2.099c0 0.563-0.177 0.901-1.667 0.901-2.464 0-5.198-1.49-7.115-4.266-2.891-4.068-3.682-7.115-3.682-7.745 0-0.339 0.135-0.656 0.786-0.656h2.328c0.589 0 0.813 0.271 1.042 0.901 1.151 3.323 3.068 6.234 3.859 6.234 0.292 0 0.427-0.135 0.427-0.88v-3.432c-0.089-1.583-0.922-1.719-0.922-2.281 0-0.271 0.224-0.542 0.583-0.542h3.661c0.495 0 0.677 0.271 0.677 0.854v4.63c0 0.5 0.224 0.677 0.359 0.677 0.292 0 0.542-0.177 1.083-0.719 1.672-1.875 2.87-4.766 2.87-4.766 0.156-0.339 0.427-0.656 1.016-0.656h2.328c0.698 0 0.854 0.359 0.698 0.859-0.292 1.354-3.141 5.375-3.141 5.375-0.245 0.406-0.339 0.583 0 1.036 0.25 0.339 1.063 1.042 1.604 1.672 0.995 1.13 1.76 2.078 1.964 2.734 0.229 0.651-0.109 0.99-0.766 0.99z"/>
+        </symbol>
+
+        <symbol id="telegram" width="40" height="40" viewBox="0 0 40 40">
+            <path d="M16 0.5c-8.563 0-15.5 6.938-15.5 15.5s6.938 15.5 15.5 15.5c8.563 0 15.5-6.938 15.5-15.5s-6.938-15.5-15.5-15.5zM23.613 11.119l-2.544 11.988c-0.188 0.85-0.694 1.056-1.4 0.656l-3.875-2.856-1.869 1.8c-0.206 0.206-0.381 0.381-0.781 0.381l0.275-3.944 7.181-6.488c0.313-0.275-0.069-0.431-0.482-0.156l-8.875 5.587-3.825-1.194c-0.831-0.262-0.85-0.831 0.175-1.231l14.944-5.763c0.694-0.25 1.3 0.169 1.075 1.219z"/>
+        </symbol>
+
+        <!-- <symbol id="pinterest" width="48" height="48" viewBox="0 0 48 48">
+            
+        </symbol> -->
+
+    </svg>
+
+    <main class="main">
+        <header class = "header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item">
+                        <a href="#experienc" class="nav__link">Experienc</a></li>
+                    <li class="nav__item">
+                        <a href="#myCode" class="nav__link">Code</a></li>
+                    <li class="nav__item">
+                        <a href="#video" class="nav__link">Video</a></li>
+                </ul>
+            </nav>
+
+            <img class="my_img" src="./img/txNTxkWrQpw.jpg" alt="It's my">
+    
+            <div class="my_name">
+                <h1 class="name">Ilyin Dmitry Igorevich</h1>
+                <p>JavaScript-developer</h2>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="about_me">
-        <div class="container">
-            <div class="all_about_me">
-                <div class="about_me_and_skills">
-                    <div class="about_me_inner">
-                        <h2>About me</h2>
-                        <p>I am responsible, proactive, stress-resistant, sociable, honest. I have a high capacity for work, I can work in multitasking mode and in a team, I have developed organizational and management skills. Hobbies: sports, music, guitar. I don’t drink, I don’t smoke.
-                            Married with one child. </p>
-                    </div>
-                    <div class="skills">
-                        <h2>Skills</h2>
-                        <ul>
-                            <li>Computer skills</li>
-                            <li>Problem-solving</li>
-                            <li>Responsibility.</li>
-                            <li>Creativity</li>
-                        </ul>
-                        <a href="https://www.codewars.com/users/Mowgle88/completed_solutions" target="_blank">sample code</a>
-                    </div>
-                </div>
-                
-                <div class="education_and_experienc">
-                    <div class="education">
-                        <h2>Education</h2>
-                        <ul>
-                            <li>School №22 - 1994 -2003</li>
-                            <li>Polytechnic College - 2003 -2007</li>
-                            <li>Belarusian-Russian University - 2007 - 2013</li>
-                            <li>English - Beginner Levels</li>
-                        </ul>
-                    </div>
-        
-                    <div class="experienc">
-                        <h2>Experienc</h2>
-                        <ul>
-                            <li>2017 -2021 RUE "Mogilevenergo" branch "Energoremont", foreman of the workshop of non-standard equipment,</li>
-                            <li>2015-2017 "Mogilevliftmash", process engineer</li>
-                            <li>2013-2015 "Cryogenmash", process engineer</li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </div>          
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer_inner">
-
-                <div class="logo">
-                    <a href="https://rs.school/js/" target="_blank"><img class="img_logo" src="./img/rs_school_js.svg" alt="rs_school"></a>
-                </div>
-
+        <article class="article">
+            <section class="section__left">
                 <div class="contacts">
-                    <ul class="ul">
-                        <li>20 Pearl Street, apt. 3, Mogilev, 212008, Belarus</li>
-                        <li>+375(33)690-57-84</li>
+                    <h3>CONTACTS</h3>
+
+                    <ul class="contact__item">
+                        <li><img src="./logo/home.svg" height="40" alt="home">
+                            <p>Pearl Street, Mogilev, Belarus, 212008</p></li>
+
+                        <li><img src="./logo/smartphone.svg" height="40" alt="phone"><p>+375(33)690-57-84</p></li>
+
+                        <li><img src="./logo/mail.svg" height="40" alt="mail"><p> mowgle1988@gmail.com</p></li>
                     </ul>
-                    <div>
-                        <a href="https://github.com/Mowgle88" target="_blank"><img src="./logo/github.png" height="25" alt=""></a>
-                        <a href="https://vk.com/id32331112" target="_blank"><img src="./logo/vk.png" height="25" alt=""></a>   
-                    </div>    
+
+                    <ul class="contact__icon">
+                        <li class="social__item"><a href="https://github.com/Mowgle88" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#github"></use>
+                            </svg>
+                        </a></li>
+
+                        <li class="social__item"><a href="https://vk.com/id32331112" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a></li>
+
+                        <li class="social__item"><a href="https://t.me/mowgle88" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
                 </div>
 
-            </div>
-        </div>
-    </footer>
+                <div class="skills" id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Computer skills</li>
+                        <li>Problem-solving</li>
+                        <li>Responsibility.</li>
+                        <li>Creativity</li>
+                    </ul>
+                    <a href="https://www.codewars.com/users/Mowgle88/completed_solutions" target="_blank">sample code</a>
+                </div>
+
+            </section>
+
+
+            <section class="section__right">
+
+                <div class="about_me">
+                    <h2>About me</h2>
+                        <p>I am responsible, proactive, stress-resistant, sociable, honest. I have a high capacity for work, I can work in multitasking mode and in a team, I have developed organizational and management skills. Hobbies: sports, music, guitar. I don’t drink, I don’t smoke.
+                        Married with one child. </p>
+                </div>
+
+                <div class="education" id="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>School №22 - 1994 -2003</li>
+                        <li>Polytechnic College - 2003 -2007</li>
+                        <li>Belarusian-Russian University - 2007 - 2013</li>
+                        <li>English - Beginner Levels</li>
+                    </ul>
+                </div>
+
+                <div class="experienc" id="experienc">
+                    <h2>Experienc</h2>
+                    <ul>
+                        <li>2017 -2021 RUE "Mogilevenergo" branch "Energoremont", foreman of the workshop of non-standard equipment,</li>
+                        <li>2015-2017 "Mogilevliftmash", process engineer</li>
+                        <li>2013-2015 "Cryogenmash", process engineer</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Example of My Code</h2>
+                </div>
+
+
+            </section>
+
+        </article>
+    
+        <footer class="footer">
+                    <div class="logo">
+                        <a href="https://rs.school/js/" target="_blank"><img class="img_logo" src="./logo/rs_school_js.svg" alt="rs_school"></a>
+                    </div>
+
+                    <h5 class="data">2021</h5>
+        </footer>
+    </main>
 
 </body>
 </html>
