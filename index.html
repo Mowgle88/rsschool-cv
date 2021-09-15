@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
     <title>My VC</title>
 </head>
 <body>
@@ -59,17 +62,17 @@
         </header>
 
         <article class="article">
-            <section class="section__left">
+            <aside class="section__left">
                 <div class="contacts">
                     <h2 class="underline">CONTACTS</h2>
 
                     <ul class="contact__item">
-                        <li><img src="./logo/home.svg" height="40" alt="home">
-                            <p>Pearl Street, Mogilev, Belarus, 212008</p></li>
+                        <li><img class="cont__icon" src="./logo/home.svg" height="40" alt="home">
+                            <p>Pearl Street, 212008,  Mogilev, <br>Belarus</p></li>
 
-                        <li><img src="./logo/smartphone.svg" height="40" alt="phone"><p>+375(33)690-57-84</p></li>
+                        <li><img class="cont__icon" src="./logo/smartphone.svg" height="40" alt="phone"><p>+375(33)690-57-84</p></li>
 
-                        <li><img src="./logo/mail.svg" height="40" alt="mail"><p> mowgle1988@gmail.com</p></li>
+                        <li><img class="cont__icon" src="./logo/mail.svg" height="40" alt="mail"><p> mowgle1988@gmail.com</p></li>
                     </ul>
 
                     <ul class="contact__icon">
@@ -96,14 +99,13 @@
                 <div class="skills" id="skills">
                     <h2 class="underline">SKILLS</h2>
                     <ul>
-                        <li>&#10022 HTML5</li>
-                        <li>&#10022 CSS3</li>
-                        <li>&#10022 JavaScript</li>
-                        <li>&#10022 GIT&Github</li>
-                        <li>&#10022 Bootstrap</li>
-                        <li>&#10022 React</li>
-                        <li>&#10022 Angular</li>
-                        <li>&#10022 and my personal qualities:
+                        <li><p>&#10022 HTML5</p><span class="HTML5"></span></li>
+                        <li><p>&#10022 CSS3</p><span class="CSS3"></span></li>
+                        <li><p>&#10022 JavaScript</p><span class="JS"></span></li>
+                        <li><p>&#10022 GIT&Github</p><span class="GIT"></span></li>
+                        <li><p>&#10022 Bootstrap</p><span class="Bootstrap"></span></li>
+                        <li><p>&#10022 React</p><span class="React"></span></li>
+                        <li><p>&#10022 Angular</p><span class="Angular"></span></li>&#10022 and my personal qualities:
                             <ul>
                                 <li>- lity to solve problems</li>
                                 <li>- Persistence</li>
@@ -119,7 +121,12 @@
                     </ul>
                 </div>
 
-            </section>
+                <div class="video" id="video">
+                    <h2 class="underline">IT IS ME</h2>
+                    <video src="./video/Video.mp4" width="90%" controls="controls">
+                    </video>
+                </div>
+            </aside>
 
 
             <section class="section__right">
@@ -134,22 +141,22 @@
                     <h2 class="underline">EDUCATION</h2>
                     <ul>
                         <li>
-                            <h3>1994 -2003</h3>
+                            <h4>1994 -2003</h4>
                             <p>School №22</p>
                         </li>
                         <li>
-                            <h3>2003 -2007</h3>
-                            <p>Polytechnic College</p>
+                            <h4>2003 -2007</h4>
+                            <p>Polytechnic College. Specialty: Mechanical engineering technology</p>
                         </li>
                         <li>
-                            <h3>2007 - 2013</h3>
-                            <p>Belarusian-Russian University</p>
+                            <h4>2007 - 2013</h4>
+                            <p>Belarusian-Russian University. Specialty: Mechanical engineering technology</p>
                         </li>
                     </ul>
                 </div>
 
                 <div class="experienc right__item" id="experienc">
-                    <h2 class="underline">Work Experienc</h2>
+                    <h2 class="underline">WORK EXPERIENC</h2>
                     <ul>
                         <li>
                             <h4>2017 -2021</h4>
@@ -177,11 +184,33 @@
                 </div>
 
                 <div class="myCode right__item" id="myCode">
-                    <h2 class="underline">Example of My Code</h2>
-                    <a href="https://www.codewars.com/users/Mowgle88/completed_solutions" target="_blank">sample code</a>
+                    <h2 class="underline">EXAMPLE OF MY CODE</h2>
+                    <pre class="code__JS">
+                        <code class="language-javascript">
+function rgb (r, g, b) {
+    let rgbArr = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+    let arr = [r, g, b];
+    let res = '';
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 255) { 
+            arr[i] = 255; 
+        }
+        if (arr[i] < 0) { 
+            arr[i] = 0;
+        }
+        let x = Math.floor(arr[i] / 16);
+        res = res + rgbArr[x] + rgbArr[(arr[i] % 16)];
+    }
+    return res; 
+}
+                        </code>
+                    </pre>
+
+                    <div class="projects">
+                        <a href="https://rolling-scopes-school.github.io/mowgle88-JSFEPRESCHOOL/museum/" target="_blank"> <img src="./img/Louvre.png" height="70" alt="louvre">
+                        <div>my first landing page</div></a>
+                    </div>
                 </div>
-
-
             </section>
 
         </article>
