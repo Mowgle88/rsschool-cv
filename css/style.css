@@ -21,7 +21,7 @@
 .main .header {
   width: 100%;
   height: 150px;
-  background-color: #8d8d94;
+  background: linear-gradient(45deg, #8d8d94, #9999c9, #3c3c8d);
   position: relative;
 }
 
@@ -119,7 +119,7 @@
 
 .contact__item,
 .contact__icon {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .contact__item li {
@@ -132,14 +132,15 @@
 }
 
 .contact__icon {
+  display: flex;
+  justify-content: space-around;
   height: 60px;
   width: 80%;
   margin: 20px auto;
   border: 5px solid white;
   border-radius: 30px;
   box-shadow: 3px 3px 10px gray;
-  display: flex;
-  justify-content: space-around;
+  background: linear-gradient(45deg, #8d8d94, #9999c9);
 }
 
 .contact__icon li {
@@ -160,8 +161,34 @@
   fill: #dad6d0;
 }
 
+.underline {
+  cursor: pointer;
+}
+
+.underline::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 60%;
+  margin: 5px auto;
+  background: #8d8d94;
+}
+
+.underline:hover::after {
+  width: 100%;
+  transition-duration: 0.7s;
+}
+
+.skills ul {
+  padding-left: 25px;
+  text-align: left;
+}
+
 .section__right .about_me {
   margin-top: 80px;
+}
+
+.right__item {
 }
 
 li {
@@ -181,7 +208,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   height: 90px;
-  background-color: #8d8d94;
+  background: linear-gradient(45deg, #8d8d94, #9999c9, #3c3c8d);
   align-items: center;
 }
 
