@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-    <title>My VC</title>
+    <title>My CV</title>
 </head>
 <body>
 
@@ -38,18 +38,43 @@
 
     <main class="main">
         <header class = "header">
+
+            <div class="burger">
+                <input type="checkbox" id="menu">
+                <label for="menu">menu</label>
+                <div class="line first"></div>
+                <div class="line second"></div>
+                <div class="line third"></div>
+                <div class="line fourth"></div>
+
+                <nav class="burger__nav">
+                    <ul class="nav__list">
+                        <li class="burger__item">
+                            <a href="#education" class="nav__link">Education</a></li>
+                        <li class="burger__item">
+                            <a href="#experienc" class="nav__link">Experienc</a></li>
+                        <li class="burger__item">
+                            <a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="burger__item">
+                            <a href="#video" class="nav__link">Video</a></li>
+                        <li class="burger__item">
+                            <a href="#myCode" class="nav__link">Code</a></li>
+                    </ul>
+                </nav>
+            </div>
+
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item">
                         <a href="#education" class="nav__link">Education</a></li>
                     <li class="nav__item">
-                        <a href="#experienc" class="nav__link">Experienc</a></li>
+                        <a href="#experienc" class="nav__link">Education</a></li>
                     <li class="nav__item">
-                        <a href="#myCode" class="nav__link">Code</a></li>
+                        <a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item">
                         <a href="#video" class="nav__link">Video</a></li>
+                    <li class="nav__item">
+                        <a href="#myCode" class="nav__link">Code</a></li>
                 </ul>
             </nav>
 
@@ -61,7 +86,7 @@
             </div>
         </header>
 
-        <article class="article">
+        <div class="article">
             <aside class="section__left">
                 <div class="contacts">
                     <h2 class="underline">CONTACTS</h2>
@@ -98,14 +123,16 @@
 
                 <div class="skills" id="skills">
                     <h2 class="underline">SKILLS</h2>
-                    <ul>
-                        <li><p>&#10022 HTML5</p><span class="HTML5"></span></li>
-                        <li><p>&#10022 CSS3</p><span class="CSS3"></span></li>
-                        <li><p>&#10022 JavaScript</p><span class="JS"></span></li>
-                        <li><p>&#10022 GIT&Github</p><span class="GIT"></span></li>
-                        <li><p>&#10022 Bootstrap</p><span class="Bootstrap"></span></li>
-                        <li><p>&#10022 React</p><span class="React"></span></li>
-                        <li><p>&#10022 Angular</p><span class="Angular"></span></li>&#10022 and my personal qualities:
+                    <ul class="marker">
+                        <li><p>HTML5</p><span class="HTML5"></span></li>
+                        <li><p>CSS3</p><span class="CSS3"></span></li>
+                        <li><p>JavaScript</p><span class="JS"></span></li>
+                        <li><p>GIT&Github</p><span class="GIT"></span></li>
+                        <li><p>Bootstrap</p><span class="Bootstrap"></span></li>
+                        <li><p>React</p><span class="React"></span></li>
+                        <li><p> Angular</p><span class="Angular"></span></li>
+                        <li>
+                            <p>and my personal qualities:</p> 
                             <ul>
                                 <li>- lity to solve problems</li>
                                 <li>- Persistence</li>
@@ -123,16 +150,14 @@
 
                 <div class="video" id="video">
                     <h2 class="underline">IT IS ME</h2>
-                    <video src="./video/Video.mp4" width="90%" controls="controls">
+                    <video src="./video/Video.mp4" width="310" controls="controls">
                     </video>
                 </div>
             </aside>
 
-
             <section class="section__right">
-
+                <h2 class="underline">ABOUT ME</h2>
                 <div class="about_me right__item">
-                    <h2 class="underline">ABOUT ME</h2>
                         <p>I am responsible, proactive, stress-resistant, sociable, honest. I have a high capacity for work, I can work in multitasking mode and in a team, I have developed organizational and management skills. Hobbies: sports, music, guitar. I don’t drink, I don’t smoke.
                         Married with one child. </p>
                 </div>
@@ -191,11 +216,11 @@ function rgb (r, g, b) {
     let rgbArr = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
     let arr = [r, g, b];
     let res = '';
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > 255) { 
+    for (let i = 0; i &lt; arr.length; i++) {
+        if (arr[i] &lt; 255) { 
             arr[i] = 255; 
         }
-        if (arr[i] < 0) { 
+        if (arr[i] &lt; 0) { 
             arr[i] = 0;
         }
         let x = Math.floor(arr[i] / 16);
@@ -212,8 +237,7 @@ function rgb (r, g, b) {
                     </div>
                 </div>
             </section>
-
-        </article>
+        </div>
     
         <footer class="footer">
                     <div class="logo">
