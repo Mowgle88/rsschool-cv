@@ -9,7 +9,7 @@ html {
   color: black;
 }
 
-.main {
+.container {
   width: 80%;
   max-width: 1080px;
   margin: 20px auto;
@@ -26,7 +26,7 @@ li {
 
 /* header ================== */
 
-.main .header {
+.container .header {
   width: 100%;
   height: 150px;
   background: linear-gradient(45deg, #8d8d94, #9999c9, #3c3c8d);
@@ -201,7 +201,7 @@ label {
 
 /* article========================== */
 
-.article {
+.main {
   display: flex;
   flex-wrap: wrap;
 }
@@ -376,7 +376,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-.experienc h3 {
+.experience h3 {
   margin: 0;
   text-align: left;
 }
@@ -477,7 +477,7 @@ h6 {
 /* adaptive===================================== */
 
 @media screen and (max-width: 800px) {
-  .main {
+  .container {
     width: 90%;
   }
 
@@ -569,7 +569,7 @@ h6 {
 }
 
 @media screen and (max-width: 400px) {
-  .main {
+  .container {
     width: 95%;
   }
 

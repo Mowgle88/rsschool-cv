@@ -35,7 +35,7 @@
 
     </svg>
 
-    <main class="main">
+    <div class="container">
         <header class = "header">
 
             <div class="burger">
@@ -51,7 +51,7 @@
                         <li class="burger__item">
                             <a href="#education" class="nav__link">Education</a></li>
                         <li class="burger__item">
-                            <a href="#experienc" class="nav__link">Experienc</a></li>
+                            <a href="#experience" class="nav__link">Experience</a></li>
                         <li class="burger__item">
                             <a href="#skills" class="nav__link">Skills</a></li>
                         <li class="burger__item">
@@ -67,7 +67,7 @@
                     <li class="nav__item">
                         <a href="#education" class="nav__link">Education</a></li>
                     <li class="nav__item">
-                        <a href="#experienc" class="nav__link">Education</a></li>
+                        <a href="#experience" class="nav__link">Experience</a></li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item">
@@ -85,17 +85,17 @@
             </div>
         </header>
 
-        <div class="article">
+        <main class="main">
             <aside class="section__left">
-                <div class="contacts">
+                <article class="contacts">
                     <h2 class="underline">CONTACTS</h2>
                     <ul class="contact__item">
                         <li><img class="cont__icon" src="./logo/home.svg" height="40" alt="home">
                             <p>Pearl Street, 212008,  Mogilev, <br>Belarus</p></li>
 
-                        <li><img class="cont__icon" src="./logo/smartphone.svg" height="40" alt="phone"><p>+375(33)690-57-84</p></li>
+                        <li><img class="cont__icon" src="./logo/smartphone.svg" height="40" alt="phone"><a href="tel:+375(33)6905794">+375(33)690-57-84</a></li>
 
-                        <li><img class="cont__icon" src="./logo/mail.svg" height="40" alt="mail"><p> mowgle1988@gmail.com</p></li>
+                        <li><img class="cont__icon" src="./logo/mail.svg" height="40" alt="mail"><a href="mailto:mowgle1988@gmail.com"> mowgle1988@gmail.com</a></li>
                     </ul>
 
                     <ul class="contact__icon">
@@ -117,9 +117,9 @@
                             </svg>
                         </a></li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="skills" id="skills">
+                <article class="skills" id="skills">
                     <h2 class="underline">SKILLS</h2>
                     <ul class="marker">
                         <li><p>HTML5</p><span class="HTML5"></span></li>
@@ -143,9 +143,9 @@
                     <h2 class="underline">LANGUAGES</h2>
                     <ul>
                         <li>- Russian (it is my native language)</li>
-                        <li>- English - Beginner Levels</li>
+                        <li>- English - Beginner Level</li>
                     </ul>
-                </div>
+                </article>
 
                 <div id="video">
                     <h2 class="underline">IT IS ME</h2>
@@ -159,10 +159,10 @@
                 <h2 class="underline">ABOUT ME</h2>
                 <div class="about_me right__item">
                         <p>I am responsible, proactive, stress-resistant, sociable, honest. I have a high capacity for work, I can work in multitasking mode and in a team, I have developed organizational and management skills. Hobbies: sports, music, guitar. I don’t drink, I don’t smoke.
-                        Married with one child. </p>
+                        Married, father of one child. </p>
                 </div>
 
-                <div class="education right__item" id="education">
+                <article class="education right__item" id="education">
                     <img class="icon__h" height="40" src="./logo/education.png" alt="education">
                     <h2 class="underline">EDUCATION</h2>
                     <ul>
@@ -179,11 +179,11 @@
                             <p>Belarusian-Russian University. Specialty: Mechanical engineering technology</p>
                         </li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="experienc right__item" id="experienc">
+                <article class="experience right__item" id="experience">
                     <img class="icon__h" height="40" src="./logo/work.png" alt="work">
-                    <h2 class="underline">EXPERIENC</h2>
+                    <h2 class="underline">EXPERIENCE</h2>
                     <ul>
                         <li>
                             <h4>2017 -2021</h4>
@@ -208,9 +208,9 @@
                             <p>milling machine operator</p>
                         </li>
                     </ul>
-                </div>
+                </article>
 
-                <div class="myCode" id="myCode">
+                <article class="myCode" id="myCode">
                     <img class="icon__h" height="40" src="./logo/web-development.png" alt="coding">
                     <h2 class="underline">MY CODING</h2>
                     <pre class="code__JS">
@@ -241,10 +241,10 @@ function compose(f,g) {
                             </div>
                         </a>
                     </div>
-                </div>                
+                </article>                
             
             </section>
-        </div>
+        </main>
     
         <footer class="footer">
                     <div class="logo">
@@ -254,7 +254,7 @@ function compose(f,g) {
                     <h5 class="data">Made in 2021</h5>
                     <h5 class="data__2">2021</h5>
         </footer>
-    </main>
+    </div>
 
 
     <script src="./index.js"></script>
