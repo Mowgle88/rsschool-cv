@@ -1,220 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./logo/icon-cv2.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./logo/icon-cv2.png" type="image/png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
-    <script src="./highlight.min.js"></script>
-    <link rel="stylesheet" href="./styles/gradient-dark.min.css">
-    <script>hljs.highlightAll()</script>
+  <script src="./highlight.min.js"></script>
+  <link rel="stylesheet" href="./styles/gradient-dark.min.css">
+  <script>hljs.highlightAll()</script>
 
-    <title>Dmitry Ilyin</title>
+  <title>Dmitry Ilyin</title>
 </head>
+
 <body>
 
-    <!-- Sprite -->
-    <svg style="display: none;">
+  <!-- Sprite -->
+  <svg style="display: none;">
 
-        <symbol id="github" width="40" height="40" viewBox="0 0 40 40">
-            <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"/>
-        </symbol>
+    <symbol id="github" width="40" height="40" viewBox="0 0 40 40">
+      <path
+        d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+    </symbol>
 
-        <symbol id="vk" width="40" height="40" viewBox="0 0 40 40">
-            <path d="M20.911 0h-9.823c-8.964 0-11.089 2.125-11.089 11.089v9.823c0 8.964 2.125 11.089 11.089 11.089h9.823c8.964 0 11.089-2.125 11.089-11.089v-9.823c0-8.964-2.146-11.089-11.089-11.089zM25.833 22.828h-2.323c-0.88 0-1.151-0.698-2.734-2.302-1.375-1.333-1.984-1.51-2.323-1.51-0.479 0-0.615 0.135-0.615 0.792v2.099c0 0.563-0.177 0.901-1.667 0.901-2.464 0-5.198-1.49-7.115-4.266-2.891-4.068-3.682-7.115-3.682-7.745 0-0.339 0.135-0.656 0.786-0.656h2.328c0.589 0 0.813 0.271 1.042 0.901 1.151 3.323 3.068 6.234 3.859 6.234 0.292 0 0.427-0.135 0.427-0.88v-3.432c-0.089-1.583-0.922-1.719-0.922-2.281 0-0.271 0.224-0.542 0.583-0.542h3.661c0.495 0 0.677 0.271 0.677 0.854v4.63c0 0.5 0.224 0.677 0.359 0.677 0.292 0 0.542-0.177 1.083-0.719 1.672-1.875 2.87-4.766 2.87-4.766 0.156-0.339 0.427-0.656 1.016-0.656h2.328c0.698 0 0.854 0.359 0.698 0.859-0.292 1.354-3.141 5.375-3.141 5.375-0.245 0.406-0.339 0.583 0 1.036 0.25 0.339 1.063 1.042 1.604 1.672 0.995 1.13 1.76 2.078 1.964 2.734 0.229 0.651-0.109 0.99-0.766 0.99z"/>
-        </symbol>
+    <symbol id="vk" width="40" height="40" viewBox="0 0 40 40">
+      <path
+        d="M20.911 0h-9.823c-8.964 0-11.089 2.125-11.089 11.089v9.823c0 8.964 2.125 11.089 11.089 11.089h9.823c8.964 0 11.089-2.125 11.089-11.089v-9.823c0-8.964-2.146-11.089-11.089-11.089zM25.833 22.828h-2.323c-0.88 0-1.151-0.698-2.734-2.302-1.375-1.333-1.984-1.51-2.323-1.51-0.479 0-0.615 0.135-0.615 0.792v2.099c0 0.563-0.177 0.901-1.667 0.901-2.464 0-5.198-1.49-7.115-4.266-2.891-4.068-3.682-7.115-3.682-7.745 0-0.339 0.135-0.656 0.786-0.656h2.328c0.589 0 0.813 0.271 1.042 0.901 1.151 3.323 3.068 6.234 3.859 6.234 0.292 0 0.427-0.135 0.427-0.88v-3.432c-0.089-1.583-0.922-1.719-0.922-2.281 0-0.271 0.224-0.542 0.583-0.542h3.661c0.495 0 0.677 0.271 0.677 0.854v4.63c0 0.5 0.224 0.677 0.359 0.677 0.292 0 0.542-0.177 1.083-0.719 1.672-1.875 2.87-4.766 2.87-4.766 0.156-0.339 0.427-0.656 1.016-0.656h2.328c0.698 0 0.854 0.359 0.698 0.859-0.292 1.354-3.141 5.375-3.141 5.375-0.245 0.406-0.339 0.583 0 1.036 0.25 0.339 1.063 1.042 1.604 1.672 0.995 1.13 1.76 2.078 1.964 2.734 0.229 0.651-0.109 0.99-0.766 0.99z" />
+    </symbol>
 
-        <symbol id="telegram" width="40" height="40" viewBox="0 0 40 40">
-            <path d="M16 0.5c-8.563 0-15.5 6.938-15.5 15.5s6.938 15.5 15.5 15.5c8.563 0 15.5-6.938 15.5-15.5s-6.938-15.5-15.5-15.5zM23.613 11.119l-2.544 11.988c-0.188 0.85-0.694 1.056-1.4 0.656l-3.875-2.856-1.869 1.8c-0.206 0.206-0.381 0.381-0.781 0.381l0.275-3.944 7.181-6.488c0.313-0.275-0.069-0.431-0.482-0.156l-8.875 5.587-3.825-1.194c-0.831-0.262-0.85-0.831 0.175-1.231l14.944-5.763c0.694-0.25 1.3 0.169 1.075 1.219z"/>
-        </symbol>
+    <symbol id="telegram" width="40" height="40" viewBox="0 0 40 40">
+      <path
+        d="M16 0.5c-8.563 0-15.5 6.938-15.5 15.5s6.938 15.5 15.5 15.5c8.563 0 15.5-6.938 15.5-15.5s-6.938-15.5-15.5-15.5zM23.613 11.119l-2.544 11.988c-0.188 0.85-0.694 1.056-1.4 0.656l-3.875-2.856-1.869 1.8c-0.206 0.206-0.381 0.381-0.781 0.381l0.275-3.944 7.181-6.488c0.313-0.275-0.069-0.431-0.482-0.156l-8.875 5.587-3.825-1.194c-0.831-0.262-0.85-0.831 0.175-1.231l14.944-5.763c0.694-0.25 1.3 0.169 1.075 1.219z" />
+    </symbol>
 
-    </svg>
+  </svg>
 
-    <div class="container">
-        <header class = "header">
+  <div class="container">
+    <header class="header">
 
-            <div class="burger">
-                <input type="checkbox" id="menu">
-                <label for="menu">menu</label>
-                <div class="line first"></div>
-                <div class="line second"></div>
-                <div class="line third"></div>
-                <div class="line fourth"></div>
+      <div class="burger">
+        <input type="checkbox" id="menu">
+        <label for="menu">menu</label>
+        <div class="line first"></div>
+        <div class="line second"></div>
+        <div class="line third"></div>
+        <div class="line fourth"></div>
 
-                <nav class="burger__nav">
-                    <ul class="nav__list">
-                        <li class="burger__item">
-                            <a href="#education" class="nav__link">Education</a></li>
-                        <li class="burger__item">
-                            <a href="#experience" class="nav__link">Experience</a></li>
-                        <li class="burger__item">
-                            <a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="burger__item">
-                            <a href="#video" class="nav__link">Video</a></li>
-                        <li class="burger__item">
-                            <a href="#myCode" class="nav__link">Code</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <nav class="burger__nav">
+          <ul class="nav__list">
+            <li class="burger__item">
+              <a href="#education" class="nav__link">Education</a>
+            </li>
+            <li class="burger__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="burger__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="burger__item">
+              <a href="#video" class="nav__link">Video</a>
+            </li>
+            <li class="burger__item">
+              <a href="#myCode" class="nav__link">Code</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#education" class="nav__link">Education</a></li>
-                    <li class="nav__item">
-                        <a href="#experience" class="nav__link">Experience</a></li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item">
-                        <a href="#video" class="nav__link">Video</a></li>
-                    <li class="nav__item">
-                        <a href="#myCode" class="nav__link">Code</a></li>
-                </ul>
-            </nav>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#education" class="nav__link">Education</a>
+          </li>
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">Experience</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#video" class="nav__link">Video</a>
+          </li>
+          <li class="nav__item">
+            <a href="#myCode" class="nav__link">Code</a>
+          </li>
+        </ul>
+      </nav>
 
-            <img class="my_img" src="./img/txNTxkWrQpw.jpg" alt="It's my">
-    
-            <div class="my_name">
-                <h1 class="name">Ilyin Dmitry Igorevich</h1>
-                <h3>JavaScript-developer</h3>
-            </div>
-        </header>
+      <img class="my_img" src="./img/txNTxkWrQpw.jpg" alt="It's my">
 
-        <main class="main">
-            <aside class="section__left">
-                <article class="contacts">
-                    <h2 class="underline">CONTACTS</h2>
-                    <ul class="contact__item">
-                        <li><img class="cont__icon" src="./logo/home.svg" height="40" alt="home">
-                            <p>Pearl Street, 212008,  Mogilev, <br>Belarus</p></li>
+      <div class="my_name">
+        <h1 class="name">Ilyin Dmitry Igorevich</h1>
+        <h3>JavaScript-developer</h3>
+      </div>
+    </header>
 
-                        <li><img class="cont__icon" src="./logo/smartphone.svg" height="40" alt="phone"><a href="tel:+375(33)6905794">+375(33)690-57-84</a></li>
+    <main class="main">
+      <aside class="section__left">
+        <article class="contacts">
+          <h2 class="underline">CONTACTS</h2>
+          <ul class="contact__item">
+            <li><img class="cont__icon" src="./logo/home.svg" height="40" alt="home">
+              <p>Pearl Street, 212008, Mogilev, <br>Belarus</p>
+            </li>
 
-                        <li><img class="cont__icon" src="./logo/mail.svg" height="40" alt="mail"><a href="mailto:mowgle1988@gmail.com"> mowgle1988@gmail.com</a></li>
-                    </ul>
+            <li><img class="cont__icon" src="./logo/smartphone.svg" height="40" alt="phone"><a
+                href="tel:+375(33)6905794">+375(33)690-57-84</a></li>
 
-                    <ul class="contact__icon">
-                        <li class="social__item"><a href="https://github.com/Mowgle88" target="_blank">
-                            <svg class="social__icon">
-                                <use xlink:href="#github"></use>
-                            </svg>
-                        </a></li>
+            <li><img class="cont__icon" src="./logo/mail.svg" height="40" alt="mail"><a
+                href="mailto:mowgle1988@gmail.com"> mowgle1988@gmail.com</a></li>
+          </ul>
 
-                        <li class="social__item"><a href="https://vk.com/id32331112" target="_blank">
-                            <svg class="social__icon">
-                                <use xlink:href="#vk"></use>
-                            </svg>
-                        </a></li>
+          <ul class="contact__icon">
+            <li class="social__item"><a href="https://github.com/Mowgle88" target="_blank">
+                <svg class="social__icon">
+                  <use xlink:href="#github"></use>
+                </svg>
+              </a></li>
 
-                        <li class="social__item"><a href="https://t.me/mowgle88" target="_blank">
-                            <svg class="social__icon">
-                                <use xlink:href="#telegram"></use>
-                            </svg>
-                        </a></li>
-                    </ul>
-                </article>
+            <li class="social__item"><a href="https://vk.com/id32331112" target="_blank">
+                <svg class="social__icon">
+                  <use xlink:href="#vk"></use>
+                </svg>
+              </a></li>
 
-                <article class="skills" id="skills">
-                    <h2 class="underline">SKILLS</h2>
-                    <ul class="marker">
-                        <li><p>HTML5</p><span class="HTML5"></span></li>
-                        <li><p>CSS3</p><span class="CSS3"></span></li>
-                        <li><p>JavaScript</p><span class="JS"></span></li>
-                        <li><p>GIT&Github</p><span class="GIT"></span></li>
-                        <li><p>Bootstrap</p><span class="Bootstrap"></span></li>
-                        <li><p>React</p><span class="React"></span></li>
-                        <li><p> Angular</p><span class="Angular"></span></li>
-                        <li>
-                            <p>and my personal qualities:</p> 
-                            <ul>
-                                <li>- Persistence</li>
-                                <li>- Responsibility</li>
-                                <li>- Diligence</li>
-                                <li>- Perseverance</li>
-                                <li>- Stress tolerance</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h2 class="underline">LANGUAGES</h2>
-                    <ul>
-                        <li>- Russian (it is my native language)</li>
-                        <li>- English - Beginner Level</li>
-                    </ul>
-                </article>
+            <li class="social__item"><a href="https://t.me/mowgle88" target="_blank">
+                <svg class="social__icon">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+              </a></li>
+          </ul>
+        </article>
 
-                <div id="video">
-                    <h2 class="underline">IT IS ME</h2>
+        <article class="skills" id="skills">
+          <h2 class="underline">SKILLS</h2>
+          <ul class="marker">
+            <li>
+              <p>HTML5</p><span class="HTML5"></span>
+            </li>
+            <li>
+              <p>CSS3</p><span class="CSS3"></span>
+            </li>
+            <li>
+              <p>JavaScript</p><span class="JS"></span>
+            </li>
+            <li>
+              <p>GIT&Github</p><span class="GIT"></span>
+            </li>
+            <li>
+              <p>Bootstrap</p><span class="Bootstrap"></span>
+            </li>
+            <li>
+              <p>React</p><span class="React"></span>
+            </li>
+            <li>
+              <p> Angular</p><span class="Angular"></span>
+            </li>
+            <li>
+              <p>and my personal qualities:</p>
+              <ul>
+                <li>- Persistence</li>
+                <li>- Responsibility</li>
+                <li>- Diligence</li>
+                <li>- Perseverance</li>
+                <li>- Stress tolerance</li>
+              </ul>
+            </li>
+          </ul>
+          <h2 class="underline">LANGUAGES</h2>
+          <ul>
+            <li>- Russian (it is my native language)</li>
+            <li>- English - Beginner Level</li>
+          </ul>
+        </article>
 
-                    <iframe class="video" src="https://www.youtube.com/embed/8-QVmvbu8wo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="video">
+          <h2 class="underline">IT IS ME</h2>
 
-                </div>
-            </aside>
+          <iframe class="video" src="https://www.youtube.com/embed/8-QVmvbu8wo" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-            <section class="section__right">
-                <img class="icon__h" height="40" src="./logo/icon-man.png" alt="about">
-                <h2 class="underline">ABOUT ME</h2>
-                <div class="about_me right__item">
-                        <p>I am responsible, proactive, stress-resistant, sociable, honest. I have a high capacity for work, I can work in multitasking mode and in a team, I have developed organizational and management skills. Hobbies: sports, music, guitar. I don’t drink, I don’t smoke.
-                        Married, father of one child. </p>
-                </div>
+        </div>
+      </aside>
 
-                <article class="education right__item" id="education">
-                    <img class="icon__h" height="40" src="./logo/education.png" alt="education">
-                    <h2 class="underline">EDUCATION</h2>
-                    <ul>
-                        <li>
-                            <h4>1994 -2003</h4>
-                            <p>School №22</p>
-                        </li>
-                        <li>
-                            <h4>2003 -2007</h4>
-                            <p>Polytechnic College. Specialty: Mechanical engineering technology</p>
-                        </li>
-                        <li>
-                            <h4>2007 - 2013</h4>
-                            <p>Belarusian-Russian University. Specialty: Mechanical engineering technology</p>
-                        </li>
-                    </ul>
-                </article>
+      <section class="section__right">
+        <img class="icon__h" height="40" src="./logo/icon-man.png" alt="about">
+        <h2 class="underline">ABOUT ME</h2>
+        <div class="about_me right__item">
+          <p>I am responsible, proactive, stress-resistant, sociable, honest. I have a high capacity for work, I can
+            work in multitasking mode and in a team, I have developed organizational and management skills. Hobbies:
+            sports, music, guitar. I don’t drink, I don’t smoke.
+            Married, father of one child. </p>
+        </div>
 
-                <article class="experience right__item" id="experience">
-                    <img class="icon__h" height="40" src="./logo/work.png" alt="work">
-                    <h2 class="underline">EXPERIENCE</h2>
-                    <ul>
-                        <li>
-                            <h4>2017 -2021</h4>
-                            <h3>"Mogilevenergo" branch "Energoremont"</h3>
-                            <p>foreman of the workshop of non-standard equipment</p>
-                        </li>
+        <article class="education right__item" id="education">
+          <img class="icon__h" height="40" src="./logo/education.png" alt="education">
+          <h2 class="underline">EDUCATION</h2>
+          <ul>
+            <li>
+              <h4>1994 -2003</h4>
+              <p>School №22</p>
+            </li>
+            <li>
+              <h4>2003 -2007</h4>
+              <p>Polytechnic College. Specialty: Mechanical engineering technology</p>
+            </li>
+            <li>
+              <h4>2007 - 2013</h4>
+              <p>Belarusian-Russian University. Specialty: Mechanical engineering technology</p>
+            </li>
+          </ul>
+        </article>
 
-                        <li>
-                            <h4>2015-2017</h4>
-                            <h3>"Mogilevliftmash"</h3>
-                            <p>process engineer</p>
-                        </li>
-                        <li>
-                            <h4>2013-2015</h4>
-                            <h3>"Cryogenmash"</h3>
-                            <p>process engineer</p>
-                        </li>
+        <article class="experience right__item" id="experience">
+          <img class="icon__h" height="40" src="./logo/work.png" alt="work">
+          <h2 class="underline">EXPERIENCE</h2>
+          <ul>
+            <li>
+              <h4>2017 -2021</h4>
+              <h3>"Mogilevenergo" branch "Energoremont"</h3>
+              <p>foreman of the workshop of non-standard equipment</p>
+            </li>
 
-                        <li>
-                            <h4>2007 -2013</h4>
-                            <h3>"Mogotex"</h3>
-                            <p>milling machine operator</p>
-                        </li>
-                    </ul>
-                </article>
+            <li>
+              <h4>2015-2017</h4>
+              <h3>"Mogilevliftmash"</h3>
+              <p>process engineer</p>
+            </li>
+            <li>
+              <h4>2013-2015</h4>
+              <h3>"Cryogenmash"</h3>
+              <p>process engineer</p>
+            </li>
 
-                <article class="myCode" id="myCode">
-                    <img class="icon__h" height="40" src="./logo/web-development.png" alt="coding">
-                    <h2 class="underline">MY CODING</h2>
-                    <pre class="code__JS">
+            <li>
+              <h4>2007 -2013</h4>
+              <h3>"Mogotex"</h3>
+              <p>milling machine operator</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="myCode" id="myCode">
+          <img class="icon__h" height="40" src="./logo/web-development.png" alt="coding">
+          <h2 class="underline">MY CODING</h2>
+          <pre class="code__JS">
                         <code class="javascript">
 function compose(f,g) {
     return function(...value) {
@@ -224,42 +260,133 @@ function compose(f,g) {
                         </code>
                     </pre>
 
-                    <div class="projects">
+          <div class="works" id="works">
 
-                        <a class="projects__item" href="https://rolling-scopes-school.github.io/mowgle88-JSFEPRESCHOOL/museum/" target="_blank">
-                            <img class="projects__img" src="./img/Louvre.png" alt="louvre">
-                            <div  class="projects__inner">
-                                <h6 class="title">Louvre</h6>
-                                <p class="discription">The Louvre Museum is one of the largest and most popular art museums in the world</p>
-                                <p class="discription">Html, scc</p>
-                            </div>
-                        </a>
+            <div class="works__item museum">
+              <div class="works__content">
+                <a class="works__title" href="https://rolling-scopes-school.github.io/mowgle88-JSFE2021Q3/museum-dom/"
+              target="_blank">Museum</a>
+                <div class="works__text">Key skills:
+                  <br>
+                  - valid semantic layout; <br>
+                  - export styles and graphics from Figma; <br>
+                  - layout, stylization and validation of forms; <br>
+                  - creating an infinite slider / swiper or adding it using the library; <br>
+                  - creation of custom HTML5 video player; <br>
+                  - animation when scrolling (images in the Gallery section); <br>
+                  - adding a calculator for the sale of goods to the site; <br>
+                  - adding an interactive map to the site, connected using the mapbox js-library, its customization: adding markers, changing the style;</div>
+              </div>
+            </div>
 
-                        <a class="projects__item" href=https://rolling-scopes-school.github.io/mowgle88-JSFEPRESCHOOL/drum-kit/ target="_blank">
-                            <img class="projects__img" src="./img/Drumkit.png" alt="drumkit">
-                            <div  class="projects__inner">
-                                <h6 class="title">Drum-kit</h6>
-                                <p class="discription black">Press the buttons and you will have a beat</p>
-                                <p class="discription">Html, scc, js</p>
-                            </div>
-                        </a>
-                    </div>
-                </article>                
+            <div class="works__item momentum">
+              <div class="works__content">
+                <a class="works__title" href="https://rolling-scopes-school.github.io/mowgle88-JSFE2021Q3/momentum/"
+              target="_blank">Momentum</a>
+                <div class="works__text">Key skills:<br>
+                  - methods of searching for elements;<br>
+                  - data output to the page;<br>
+                  - work with date and time;<br>
+                  - work with audio;<br>
+                  - saving data in local storage;<br>
+                  - use of recursive setTimeout;<br>
+                  - work with asynchronous requests.</div>
+              </div>
+            </div>
+
+            <div class="works__item art-quiz">
+              <div class="works__content">
+                <a class="works__title" href="https://rolling-scopes-school.github.io/mowgle88-JSFE2021Q3/art-quiz/"
+              target="_blank">Art-quiz</a>
+                <div class="works__text">Key skills:<br>
+                  - OOP;<br>
+                  - JavaScript Classes;<br>
+                  - Modules in JavaScript;<br>
+                  - Webpack;<br>
+                  - CSS3 Animations;<br>
+                  - Local Storage;<br>
+                  - генерирование html через js;<br>
+                  - самостоятельное создание js-приложений</div>
+              </div>
+            </div>
+
+            <div class="works__item christmas">
+              <div class="works__content">
+                <a class="works__title" href="https://rolling-scopes-school.github.io/mowgle88-JSFE2021Q3/christmas-task/"
+              target="_blank">Christmas</a>
+                <div class="works__text">Key skills:<br>
+                  - Typescript;<br>
+                  - Modules in JavaScript;<br>
+                  - webpack;<br>
+                  - data sorting;<br>
+                  - data filtering;<br>
+                  - search implementation;<br>
+                  - implementation of "drag and drop".</div>
+              </div>
+            </div>
+
+            <div class="works__item async-race">
+              <div class="works__content">
+                <a class="works__title" href="https://rolling-scopes-school.github.io/mowgle88-JSFE2021Q3/async-race/"
+              target="_blank">Async-race</a>
+                <div class="works__text">Key skills:<br>
+                  - Typescript;<br>
+                  - Modules in JavaScript;<br>
+                  - webpack;<br>
+                  - Communication with a server (fetch, REST API);<br>
+                  - Async coding / Promises;<br>
+                  - JS Animations;<br>
+                  - DOM API</div>
+              </div>
+            </div>
+
+            <div class="works__item rs-lang">
+              <div class="works__content">
+                <a class="works__title" href="https://niadi26.github.io/RS-lang/rs-lang/"
+              target="_blank">Rs-lang</a>
+                <div class="works__text">Key skills:<br>
+                  - Typescript;<br>
+                  - Modules in JavaScript;<br>
+                  - webpack;<br>
+                  - Communication with a server (fetch, REST API);<br>
+                  - Async coding / Promises;<br>
+                  - working in a team</div>
+              </div>
+            </div>
             
-            </section>
-        </main>
-    
-        <footer class="footer">
-                    <div class="logo">
-                        <a href="https://rs.school/js/" target="_blank"><img class="img_logo" src="./logo/rs_school_js.svg" alt="rs_school"></a>
-                    </div>
+            <div class="works__item project-management">
+              <div class="works__content">
+                <a class="works__title" href="https://project-management-app-bece7.web.app/welcome"
+              target="_blank">Project-management-app</a>
+                <div class="works__text">Key skills:<br>
+                  - Angular;<br>
+                  - Typescript;<br>
+                  - Modules in JavaScript;<br>
+                  - Communication with a server (fetch, REST API);<br>
+                  - Async coding / Promises;<br>
+                  - working in a team</div>
+              </div>
+            </div>
 
-                    <h5 class="data">Made in 2021</h5>
-                    <h5 class="data__2">2021</h5>
-        </footer>
-    </div>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="logo">
+        <a href="https://rs.school/js/" target="_blank"><img class="img_logo" src="./logo/rs_school_js.svg"
+            alt="rs_school"></a>
+      </div>
+
+      <h5 class="data">Made in 2021</h5>
+      <h5 class="data__2">2021</h5>
+    </footer>
+  </div>
 
 
-    <script src="./index.js"></script>
+  <script src="./index.js"></script>
 </body>
+
 </html>
