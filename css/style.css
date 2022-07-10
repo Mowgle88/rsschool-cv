@@ -10,8 +10,8 @@ html {
 }
 
 .container {
-  width: 90%;
-  max-width: 1400px;
+  width: 80%;
+  max-width: 1200px;
   margin: 20px auto;
   border: black solid 1px;
   font-family: "Satisfy", cursive;
@@ -399,9 +399,95 @@ h4 {
 
 /* Works
 ===================*/
+
+.works-link {
+  color: #3c416b;
+  text-shadow: 5px 0px 5px #3c416b;
+  transition: linear all 0.4s;
+}
+
+.works-link:hover {
+  transform: scale(1.1);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;  
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay:target .works {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.close-anchor {
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.overclose {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .works {
   display: flex;
   flex-wrap: wrap;
+
+  width: 90%;
+  max-width: 1200px;
+  height: 90%;
+
+  position: relative;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #ffffff;
+  opacity: 0;
+  transform: translate(-100%, 0px);
+  transition: 0.5s;
+  overflow: auto;
+
+  border: black solid 1px;
+  box-shadow: 1px 50px 100px 10px rgb(0 0 0 / 50%);
+}
+
+.works::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f9f9fd;
+}
+
+.works::-webkit-scrollbar-thumb {
+  background-color: #2820b3;
+}
+
+.works_header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #3c416b;
+  text-shadow: 5px 0px 5px #3c416b;
 }
 
 .museum {
@@ -449,17 +535,6 @@ h4 {
 
 .works__item:hover .works__content {
   opacity: 1;
-}
-
-.works__photo {
-  height: 100%;
-  width: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-
-  transform: translate3d(-50%, -50%, 0);
 }
 
 .works__content {
@@ -634,6 +709,10 @@ h4 {
 
   .section__right {
     width: 100%;
+  }
+
+  .works {
+    padding: 60px 20px;
   }
 
   .data {
