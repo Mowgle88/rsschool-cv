@@ -11,7 +11,7 @@ html {
 
 .container {
   width: 80%;
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 20px auto;
   border: black solid 1px;
   font-family: "Satisfy", cursive;
@@ -396,55 +396,199 @@ h4 {
 .javascript {
   border-radius: 20px;
 }
-/* projects ==============================*/
-.projects {
+
+/* Works
+===================*/
+
+.works-link {
+  color: #3c416b;
+  text-shadow: 5px 0px 5px #3c416b;
+  transition: linear all 0.4s;
+}
+
+.works-link:hover {
+  transform: scale(1.1);
+}
+
+.overlay {
   width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;  
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay:target .works {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.close-anchor {
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.overclose {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.works {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-.projects__item {
-  display: block;
-  margin: 0 auto;
-  padding: 5px;
-  max-height: 140px;
-  max-width: 280px;
-  text-decoration: none;
-  position: relative;
-  cursor: pointer;
-}
-
-.projects__item:hover {
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-
-.projects__img {
-  align-items: center;
-  width: 100%;
-}
-
-.projects__inner {
-  position: absolute;
   width: 90%;
-  top: 50%;
+  max-width: 1200px;
+  height: 90%;
+
+  position: relative;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #ffffff;
+  opacity: 0;
+  transform: translate(-100%, 0px);
+  transition: 0.5s;
+  overflow: auto;
+
+  border: black solid 1px;
+  box-shadow: 1px 50px 100px 10px rgb(0 0 0 / 50%);
+}
+
+.works::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f9f9fd;
+}
+
+.works::-webkit-scrollbar-thumb {
+  background-color: #2820b3;
+}
+
+.works_header {
+  position: absolute;
+  top: 10px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
+  color: #3c416b;
+  text-shadow: 5px 0px 5px #3c416b;
 }
 
-.title,
-.discription {
-  margin: 0;
-  padding: 0;
+.museum {
+  background-image: url(/img/works/museum.png);
+}
+
+.momentum {
+  background-image: url(/img/works/momentum.png);
+}
+
+.art-quiz {
+  background-image: url(/img/works/art-quiz.png);
+}
+
+.christmas {
+  background-image: url(/img/works/christmas.png);
+}
+
+.async-race {
+  background-image: url(/img/works/async-race.png);
+}
+
+.rs-lang {
+  background-image: url(/img/works/rs-lang.png);
+}
+
+.project-management {
+  background-image: url(/img/works/project-management.png);
+}
+
+.works__item {
+  width: 50%;
+  height: auto;
+  padding-top: 28.125%;
+
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+
+  position: relative;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.works__item:hover .works__content {
+  opacity: 1;
+}
+
+.works__content {
+  display: flex;
+  padding: 15px 5px;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(82, 82, 155, 0.8);
+  opacity: 0;
+
   text-align: center;
-  line-height: 1;
-  color: #ffffff;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  transition: opacity .2s linear;
 }
 
-h6 {
-  font-size: 1.2rem;
+.works__title {
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  transition: linear all 0.3s;
 }
+
+.works__title:hover {
+  transform: scale(1.2);
+}
+
+.works__text {
+  padding: 5px 5px;
+  font-size: 16px;
+  color: #fff;
+  /* text-align: left; */
+  overflow: auto;
+}
+
+.works__text::-webkit-scrollbar {
+  /* width: 3px;
+  background-color: #f9f9fd; */
+  width: 0;
+}
+
+/* .works__text::-webkit-scrollbar-thumb {
+  background-color: #2820b3;
+} */
 
 /* footer================================= */
 
@@ -519,6 +663,12 @@ h6 {
   .section__right .underline {
     margin-top: 0;
   }
+
+  .works__item {
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -559,6 +709,10 @@ h6 {
 
   .section__right {
     width: 100%;
+  }
+
+  .works {
+    padding: 60px 20px;
   }
 
   .data {
