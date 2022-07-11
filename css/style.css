@@ -491,31 +491,31 @@ h4 {
 }
 
 .museum {
-  background-image: url(/img/works/museum.png);
+  background-image: url(../img/works/museum.png);
 }
 
 .momentum {
-  background-image: url(/img/works/momentum.png);
+  background-image: url(../img/works/momentum.png);
 }
 
 .art-quiz {
-  background-image: url(/img/works/art-quiz.png);
+  background-image: url(../img/works/art-quiz.png);
 }
 
 .christmas {
-  background-image: url(/img/works/christmas.png);
+  background-image: url(../img/works/christmas.png);
 }
 
 .async-race {
-  background-image: url(/img/works/async-race.png);
+  background-image: url(../img/works/async-race.png);
 }
 
 .rs-lang {
-  background-image: url(/img/works/rs-lang.png);
+  background-image: url(../img/works/rs-lang.png);
 }
 
 .project-management {
-  background-image: url(/img/works/project-management.png);
+  background-image: url(../img/works/project-management.png);
 }
 
 .works__item {
