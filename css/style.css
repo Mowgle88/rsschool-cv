@@ -703,9 +703,8 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
-  .header .my_img {
-    position: absolute;
-    top: 40px;
+  
+  .flip {
     left: calc((100%-220px) / 2 - 110px);
   }
 
