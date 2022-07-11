@@ -363,29 +363,29 @@ h2 {
 }
 
 .skills .HTML5::before {
-  width: 80%;
+  width: 90%;
 }
 
 .skills .CSS3::before {
-  width: 60%;
+  width: 80%;
 }
 
 .skills .JS::before {
-  width: 30%;
+  width: 80%;
 }
 
 .skills .GIT::before {
-  width: 50%;
+  width: 60%;
 }
 
-.skills .Bootstrap::before {
-  width: 10%;
+.skills .TypeScript::before {
+  width: 70%;
 }
-.skills .React::before {
+/* .skills .React::before {
   width: 10%;
-}
+} */
 .skills .Angular::before {
-  width: 10%;
+  width: 50%;
 }
 
 /* video================================ */
@@ -703,7 +703,7 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
-  
+
   .flip {
     left: calc((100%-220px) / 2 - 110px);
   }
